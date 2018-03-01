@@ -30,6 +30,7 @@ public class Vehicle {
 	public Vehicle() {
 		super();
 	}
+	/*-----------------------------------------*/
 
 	/**
 	 * Change the busy state of the vehicle
@@ -49,6 +50,21 @@ public class Vehicle {
 		this.rides.add(pRide);
 	}
 	
+	public void moveUp() {
+		this.coordinate.setY(this.coordinate.getY() + 1);
+	}
+	
+	public void moveDown() {
+		this.coordinate.setY(this.coordinate.getY() - 1);
+	}
+	
+	public void moveRight() {
+		this.coordinate.setX(this.coordinate.getX() + 1);
+	}
+	
+	public void moveLeft() {
+		this.coordinate.setX(this.coordinate.getX() - 1);
+	}
 	
 	/*---------------------------------*/
 	public boolean isBusy() {
