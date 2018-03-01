@@ -3,16 +3,32 @@ package entities;
 import java.util.ArrayList;
 import java.util.List;
 
+import utils.Coordinate;
+
 public class Vehicle {
 
 	private boolean busy;
 	
 	private List<Ride> rides;
-
 	
+	private Coordinate coordinate;
+	
+	/*---------------------------------*/
+	
+	public Vehicle(boolean busy, List<Ride> rides, Coordinate coordinate) {
+		super();
+		this.busy = busy;
+		this.rides = rides;
+		this.coordinate = coordinate;
+	}
+
 	public Vehicle(boolean busy) {
 		super();
 		this.busy = busy;
+	}
+
+	public Vehicle() {
+		super();
 	}
 
 	/**
@@ -49,5 +65,13 @@ public class Vehicle {
 
 	public void setRides(List<Ride> rides) {
 		this.rides = rides;
+	}
+
+	public Coordinate getCoordinate() {
+		return coordinate;
+	}
+
+	public void setCoordinate(Coordinate coordinate) {
+		this.coordinate = coordinate;
 	}
 }
