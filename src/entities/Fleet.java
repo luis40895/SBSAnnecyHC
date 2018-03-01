@@ -4,25 +4,22 @@ import java.util.List;
 
 public class Fleet {
 
-	private List<Car> carList;
-	
+	private List<Vehicle> vehicleList;
 	
 	public Fleet() {
 		super();
 	}
-	
-	public Fleet(List<Car> carList) {
+
+	public Fleet(List<Vehicle> vehicleList) {
 		super();
-		this.carList = carList;
+		this.vehicleList = vehicleList;
 	}
 
-
-	public List<Car> getCarList() {
-		return carList;
+	public List<Vehicle> getVehicleList() {
+		return vehicleList;
 	}
 
-	public void setCarList(List<Car> carList) {
-		this.carList = carList;
+	public void setVehicleList(List<Vehicle> vehicleList) {
+		this.vehicleList = vehicleList;
 	}
-	
 }
