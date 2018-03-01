@@ -21,7 +21,7 @@ public class RideFileWriter {
 	public static void writeRidesForCars(Fleet fleet) throws FileNotFoundException, IOException
 	{		
 		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
-	              new FileOutputStream("result.out"), "utf-8"))) 
+	              new FileOutputStream("result.out")))) 
 		{
 			for(Vehicle v : fleet.getVehicleList()) 
 			{
@@ -33,6 +33,7 @@ public class RideFileWriter {
 					{
 						writer.write(r.getId());
 					}
+					i++;
 				}
 			}
 			writer.write("\n");

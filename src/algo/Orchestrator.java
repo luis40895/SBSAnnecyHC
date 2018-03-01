@@ -2,6 +2,7 @@ package algo;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import com.sample.Main;
@@ -46,6 +47,7 @@ public class Orchestrator implements Runnable {
 				Ride ride = Coordinate.getNearestRide(v, rides, Main.maxStep);
 				if(ride != null) {
 					hasRideBeenAssociated = true;
+					v.addRide(ride);
 					doRide(v, ride);
 				}
 			}
@@ -102,7 +104,7 @@ public class Orchestrator implements Runnable {
 	}
 
 	public void retrieveRides() {
-		rides = Main.ridesList;
+		rides = new ArrayList<Ride>(Main.ridesList);
 	}
 
 	public void allocateRides() {

@@ -50,9 +50,7 @@ public class Vehicle {
 	 * @param pRide
 	 */
 	public void addRide(Ride pRide) {
-		if(rides.size() == 0) {
-			rides = new ArrayList<Ride>();
-		}
+		
 		this.rides.add(pRide);
 	}
 	
