@@ -49,7 +49,7 @@ public class RideFileReader {
 		ClassLoader classLoader = getClass().getClassLoader();
 		List<Integer> values = new ArrayList<Integer>();
 		
-		try(BufferedReader br = new BufferedReader(new FileReader(classLoader.getResource("e_high_bonus.in").getFile()))) 
+		try(BufferedReader br = new BufferedReader(new FileReader(classLoader.getResource("b_should_be_easy.in").getFile()))) 
 		{
 		    StringBuilder sb = new StringBuilder();
 		    String line = br.readLine();
