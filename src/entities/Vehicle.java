@@ -29,6 +29,7 @@ public class Vehicle {
 
 	public Vehicle() {
 		super();
+		busy=false;
 	}
 	/*-----------------------------------------*/
 

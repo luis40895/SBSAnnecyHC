@@ -11,6 +11,11 @@ public class Coordinate {
 	
 	private HashMap<Integer,Integer> coordinates;
 	
+	public Coordinate(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
 	public HashMap<Integer,Integer> getCoordinates(){
 		coordinates.put(x, y);
 		return coordinates;

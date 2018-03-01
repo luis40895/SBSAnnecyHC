@@ -1,5 +1,6 @@
 package entities;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Fleet {
@@ -8,6 +9,7 @@ public class Fleet {
 	
 	public Fleet() {
 		super();
+		vehicleList = new ArrayList();
 	}
 
 	public Fleet(List<Vehicle> vehicleList) {
