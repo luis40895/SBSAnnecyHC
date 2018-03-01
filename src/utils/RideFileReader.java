@@ -35,6 +35,7 @@ public class RideFileReader {
 			        r.setFinishIntersection(new Coordinate(Integer.parseInt(s[2]), Integer.parseInt(s[3])));
 			        r.setEarliestStep(Integer.parseInt(s[4]));
 			        r.setLatestStep(Integer.parseInt(s[5]));
+			        r.setId(i-1);
 			        rides.add(r);
 		        }
 		        i++;

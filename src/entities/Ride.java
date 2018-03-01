@@ -11,6 +11,8 @@ public class Ride {
 	private int earliestStep;
 	
 	private int latestStep;
+	
+	private int id;
 
 	public Coordinate getStartIntersection() {
 		return startIntersection;
@@ -43,8 +45,14 @@ public class Ride {
 	public void setLatestStep(int latestStep) {
 		this.latestStep = latestStep;
 	}
-	
-	
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
 	
 	
 }
