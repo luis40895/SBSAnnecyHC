@@ -33,6 +33,8 @@ public class Vehicle {
 		super();
 		busy=false;
 		this.currentStep = 0;
+		this.rides = new ArrayList<>();
+		this.coordinate = new Coordinate(0,0);
 	}
 	/*-----------------------------------------*/
 

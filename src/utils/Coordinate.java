@@ -24,7 +24,7 @@ public class Coordinate {
 		return coordinates;
 	}
 	
-	public Ride getNearestRide(Vehicle pVehicle, List<Ride> pRideList, int pMaxStep) {
+	public static Ride getNearestRide(Vehicle pVehicle, List<Ride> pRideList, int pMaxStep) {
 		Ride result = null;
 		int resultDiff = Integer.MAX_VALUE;
 		
@@ -49,7 +49,7 @@ public class Coordinate {
 		return result;
 	}
 	
-	public int getDistance(Coordinate pACoordinate, Coordinate pBCoordinate) {
+	public static int getDistance(Coordinate pACoordinate, Coordinate pBCoordinate) {
 		return Math.abs(pACoordinate.getX() - pBCoordinate.getX()) + Math.abs(pACoordinate.getY() - pBCoordinate.getY());
 	}
 	

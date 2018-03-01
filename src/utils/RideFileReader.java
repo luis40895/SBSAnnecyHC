@@ -18,7 +18,7 @@ public class RideFileReader {
 		List<Ride> rides = new ArrayList<>();
 		ClassLoader classLoader = getClass().getClassLoader();
 		
-		try(BufferedReader br = new BufferedReader(new FileReader(classLoader.getResource("e_high_bonus.in").getFile()))) {
+		try(BufferedReader br = new BufferedReader(new FileReader(classLoader.getResource("b_should_be_easy.in").getFile()))) {
 		    StringBuilder sb = new StringBuilder();
 		    String line = br.readLine();
 		    int i = 0;
@@ -26,7 +26,6 @@ public class RideFileReader {
 		    {
 		        sb.append(line);
 		        sb.append(System.lineSeparator());
-		        line = br.readLine();
 		        if(i>0) 
 		        {
 			        String[] s = line.split(" ");
@@ -38,6 +37,7 @@ public class RideFileReader {
 			        r.setId(i-1);
 			        rides.add(r);
 		        }
+		        line = br.readLine();
 		        i++;
 		    }
 		    return rides;

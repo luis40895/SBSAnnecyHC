@@ -18,7 +18,7 @@ import entities.Vehicle;
 
 public class RideFileWriter {
 	
-	public void writeRidesForCars(Fleet fleet) throws FileNotFoundException, IOException
+	public static void writeRidesForCars(Fleet fleet) throws FileNotFoundException, IOException
 	{		
 		try (Writer writer = new BufferedWriter(new OutputStreamWriter(
 	              new FileOutputStream("result.out"), "utf-8"))) 
