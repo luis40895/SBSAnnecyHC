@@ -13,6 +13,8 @@ public class Vehicle {
 	
 	private Coordinate coordinate;
 	
+	private int currentStep;
+	
 	/*---------------------------------*/
 	
 	public Vehicle(boolean busy, List<Ride> rides, Coordinate coordinate) {
@@ -30,6 +32,7 @@ public class Vehicle {
 	public Vehicle() {
 		super();
 		busy=false;
+		this.currentStep = 0;
 	}
 	/*-----------------------------------------*/
 
@@ -91,4 +94,13 @@ public class Vehicle {
 	public void setCoordinate(Coordinate coordinate) {
 		this.coordinate = coordinate;
 	}
+
+	public int getCurrentStep() {
+		return currentStep;
+	}
+
+	public void setCurrentStep(int currentStep) {
+		this.currentStep = currentStep;
+	}
+	
 }
